@@ -28,54 +28,82 @@
     
     </table>
 
-    <table border="1" width="100%">
+    <table width="100%" border="1" cellpadding="0" cellspacing="0">
         <tr>
-            <td valign="top">
-                טלפון:
-                <select name="number" id="number">
-                    <option value="050">050</option>
-                    <option value="051">051</option>
-                    <option value="052" selected>052</option>
-                    <option value="053">053</option>
-                    <option value="054">054</option>
-                </select>
-                <input type="text" placeholder="טלפון" />
-                <hr>
-
-                תאריך לידה:
-                <select name="day" id="day">
-                    <option value="25">25</option>
-                    <option value="16" selected>16</option>
-                </select>
-                <select name="month" id="month">
-                    <option value="10">10</option>
-                    <option value="2" selected>2</option>
-                </select>
-                <select name="year" id="year">
-                    <option value="2011">2011</option>
-                    <option value="2014" selected>2014</option>
-                </select>
-                <hr>
-
-                מגדר:
-                <input type="radio" name="m"> זכר
-                <input type="radio" name="m"> נקבה
-                <hr>
-
-                <input type="checkbox"> אני מאשר את התקנון
-                <hr>
-
-                <button style="background-color:green; color:white; width:100%;">Submit</button>
+            <td valign="top" width="50%">
+                <table width="100%" border="1" cellpadding="10">
+                    <tr>
+                        <td width="120">טלפון:</td>
+                        <td>
+                            <input type="text" placeholder="טלפון נייד" style="width:60%">
+                            <select>
+                                <option>050</option>
+                                <option>051</option>
+                                <option selected>052</option>
+                                <option>053</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>תאריך לידה:</td>
+                        <td>
+                            <select><option selected>2025</option></select>
+                            <select><option selected>10</option></select>
+                            <select><option selected>16</option></select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>מגדר:</td>
+                        <td align="center">
+                            זכר <input type="radio" name="m">
+                            נקבה <input type="radio" name="m">
+                            אחר <input type="radio" name="m">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">
+                            <input type="checkbox"> נא לעיין בתקנון ולאשר את <a href="#">תנאי השימוש</a> באתר
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2" align="center" style="padding:15px;">
+                            <button style="background-color:#4CAF50; color:white; width:90%; padding:10px; border:none; font-size:16px;">Submit</button>
+                        </td>
+                    </tr>
+                </table>
             </td>
 
             
-            <td valign="top">
-                שם פרטי: <input type="text" placeholder="שם פרטי" /><br><br>
-                שם משפחה: <input type="text" placeholder="שם משפחה" /><br><br>
-                Email: <input type="text" placeholder="Email" /><br><br>
-                סיסמה: <input type="password" placeholder="סיסמה" /><br>
-                <input type="checkbox"> Show Password<br><br>
-                אימות סיסמה: <input type="password" placeholder="אימות סיסמה" />
+            <td valign="top" width="50%">
+                <table width="100%" border="1" cellpadding="10">
+                    <tr>
+                        <td width="120">שם<br>פרטי:</td>
+                        <td><input type="text" placeholder="שם פרטי" style="width:95%"></td>
+                    </tr>
+                    <tr>
+                        <td>שם<br>משפחה:</td>
+                        <td><input type="text" placeholder="שם משפחה" style="width:95%"></td>
+                    </tr>
+                    <tr>
+                        <td>Email:</td>
+                        <td><input type="text" placeholder="Email" style="width:95%"></td>
+                    </tr>
+                    <tr>
+                        <td>סיסמא:</td>
+                        <td>
+                            <input type="password" placeholder="סיסמא" style="width:95%">
+                            <br><input type="checkbox"> Show Password
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>אימות<br>סיסמא:</td>
+                        <td><input type="password" placeholder="אימות סיסמא" style="width:95%"></td>
+                    </tr>
+                    <tr>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                    </tr>
+                </table>
             </td>
         </tr>
     </table>
